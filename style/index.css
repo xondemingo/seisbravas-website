@@ -1,5 +1,16 @@
 @import "color.css";
+@import "font.css";
 
 html {
     background-color: var(--background-color);
+    font-size: var(--base-font-size);
+}
+
+body {
+    margin: 0;
+}
+
+.navbar-top-separator {
+    background-color: var(--main-color);
+    height: 2rem;
 }
