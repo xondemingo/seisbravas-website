@@ -10,7 +10,30 @@ body {
     margin: 0;
 }
 
-.navbar-top-separator {
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_top-separator {
     background-color: var(--main-color);
     height: 2rem;
+}
+
+.navbar_logo-and-letters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.navbar_logo-and-letters-container_logo {
+    height: 4rem;
+    width: auto;
+}
+
+.navbar_logo-and-letters-container_letters {
+    height: 2rem;
+    width: auto;
 }
