@@ -58,3 +58,22 @@ nav {
     display: inline-block;
     padding: 1.5em;
 }
+
+.navbar_selected_item {
+    font-weight: bold;
+
+    /* Specify position so we can underline it */
+    position: relative;
+}
+
+.navbar_selected_item::after {
+    /* Underline */
+    content: '';
+    position: absolute;
+    left: 0.85em;
+    right: 0.85em;
+    bottom: 1em;
+    height: 5px;
+    background-color: var(--main-color);
+    border-radius: 999px;
+}
