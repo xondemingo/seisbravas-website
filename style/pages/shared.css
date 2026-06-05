@@ -1,5 +1,5 @@
-@import "color.css";
-@import "font.css";
+@import "../base/color.css";
+@import "../base/font.css";
 
 html {
     background-color: var(--background-color);

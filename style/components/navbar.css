@@ -1,4 +1,4 @@
-@import "color.css";
+@import "../base/color.css";
 
 nav {
     display: flex;
