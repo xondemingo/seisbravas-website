@@ -1,0 +1,12 @@
+@import "color.css";
+@import "font.css";
+
+html {
+    background-color: var(--background-color);
+    font-family: var(--base-font-family), var(--fallback-font-family);
+    font-size: var(--base-font-size);
+}
+
+body {
+    margin: 0;
+}
