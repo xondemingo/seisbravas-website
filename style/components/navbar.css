@@ -4,6 +4,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: 2px solid black;
 }
 
@@ -47,7 +48,7 @@ nav {
 
     /* Make clickable area bigger */
     display: inline-block;
-    padding: 1.5em;
+    padding: 10px 16px;
 }
 
 .navbar_selected_item {
@@ -61,9 +62,9 @@ nav {
     /* Underline */
     content: '';
     position: absolute;
-    left: 0.85em;
-    right: 0.85em;
-    bottom: 1em;
+    left: 0.6em;
+    right: 0.6em;
+    bottom: 0;
     height: 5px;
     background-color: var(--main-color);
     border-radius: 999px;
