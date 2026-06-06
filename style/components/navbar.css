@@ -18,6 +18,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .navbar_logo-and-letters-container_logo {
