@@ -1,3 +1,22 @@
 @import "shared.css";
-@import "../components/navbar.css";
-@import "../components/wip.css";
+
+html, body {
+    /* Needed for centering vertically */
+    /* (otherwise the height is just the needed one by the content) */
+    height: 100%;  
+}
+
+body {
+    display: flex;
+    justify-content: center;    /* horizontal alignment */
+    align-items: center;        /* vertical alignment */
+}
+
+.intro-container {
+    height: 95%;
+}
+
+.intro-animation {
+    max-width: 100%;                /* video is large, needed so it does not */
+    max-height: 100%;               /* overflow the container */
+}

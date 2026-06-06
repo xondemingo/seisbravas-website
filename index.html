@@ -7,22 +7,21 @@
     <link rel="stylesheet" href="style/pages/index.css">
 </head>
 <body>
-    <nav>
-        <div class="navbar_top-separator"></div>
+    <div class="intro-container">
+        <!-- video must be muted and full mobile screen avoided so browsers don't block it -->
+        <video id="intro-animation" class="intro-animation" autoplay muted playsinline>
+            <source src="videos/intro.mp4" type="video/mp4">
+        </video>
+    </div>
 
-        <div class="navbar_logo-and-letters-container">
-            <img src="images/logo.png" alt="logo" class="navbar_logo-and-letters-container_logo" />
-            <img src="images/letters.png" alt="6bravas" class="navbar_logo-and-letters-container_letters" />
-        </div>
+    <script>
+        const animation = document.getElementById('intro-animation');
 
-        <div class="navbar_items_container">
-            <a href="/index.html" class="navbar_item navbar_selected_item">Inicio</a>
-            <a href="/nosotros.html" class="navbar_item">Sobre nosotros</a>
-            <a href="/contacto.html" class="navbar_item">Contacto</a>
-        </div>
-    </nav>
-
-    <img src="images/wip.png" class="work-in-progress-image" alt="dueña de seisbravas apresurando a un programador" />
-    <h1 class="work-in-progress-text">En construcción</h1>
+        animation.addEventListener('ended', function() {
+            setTimeout(() => {
+                window.location.href = "/inicio.html"
+            }, 250);
+        });
+    </script>
 </body>
 </html>
