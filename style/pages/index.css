@@ -19,4 +19,8 @@ body {
 .intro-animation {
     max-width: 100%;                /* video is large, needed so it does not */
     max-height: 100%;               /* overflow the container */
+    
+    /* Hack for Chrome, since otherwise renders a weird horizontal black line at the bottom of the video */
+    border-radius: 1px;
+    overflow: hidden;
 }
