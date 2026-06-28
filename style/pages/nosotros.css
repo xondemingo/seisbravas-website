@@ -2,6 +2,7 @@
 @import "../components/navbar.css";
 @import "../components/footer.css";
 
+/* Base is mobile screens */
 .introduction {
     margin: 2rem;
     
@@ -38,6 +39,7 @@
     height: auto;
 }
 
+/* Applies to desktop screens */
 @media (min-width: 768px) {
     .introduction {
         max-width: 60%;
@@ -66,5 +68,12 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
+    }
+}
+
+/* Applies to big desktop screens */
+@media (min-width: 2560px) {
+    .introduction {
+        max-width: 40%;
     }
 }
