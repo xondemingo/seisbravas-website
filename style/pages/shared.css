@@ -9,4 +9,13 @@ html {
 
 body {
     margin: 0;
+
+    /* Together with the <main /> css, the goal is to push the footer down */
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }

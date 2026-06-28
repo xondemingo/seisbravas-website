@@ -1,0 +1,15 @@
+@import "../base/color.css";
+
+footer {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    background-color: var(--main-color);
+    height: 2rem;
+
+    /* Align text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

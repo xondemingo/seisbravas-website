@@ -1,9 +1,3 @@
-body {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-}
-
 .work-in-progress-image {
     margin: 2rem 1rem;
 
