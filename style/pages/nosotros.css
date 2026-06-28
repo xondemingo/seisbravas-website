@@ -20,6 +20,7 @@
 }
 
 .introduction_text_greeting {
+    font-family: var(--secondary-font-family);
     font-size: 3rem;
 }
 
@@ -42,7 +43,7 @@
         max-width: 60%;
         margin-right: auto;
         margin-left: auto;
-        
+
         flex-direction: row;
     }
 

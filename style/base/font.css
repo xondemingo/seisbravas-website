@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Patrick+Hand+SC&display=swap');
 
 :root {
     --base-font-family: 'Montserrat';
+    --secondary-font-family: "Patrick Hand SC";
     --fallback-font-family: sans-serif;
     --base-font-size: 16px;
 }
