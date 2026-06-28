@@ -1,3 +1,12 @@
 @import "shared.css";
 @import "../components/navbar.css";
 @import "../components/footer.css";
+
+.introduction {
+    max-width: 95%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2em
+}
