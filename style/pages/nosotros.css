@@ -3,10 +3,39 @@
 @import "../components/footer.css";
 
 .introduction {
-    max-width: 95%;
-    margin: 0 auto;
+    margin: 2rem;
     
     display: flex;
     flex-direction: column;
     gap: 2em
+}
+
+.introduction_image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .introduction {
+        flex-direction: row;
+    }
+
+    .introduction_text {
+        flex: 3;
+    }
+
+    .introduction_image_container {
+        flex: 2;
+
+        /* By fixing it we want to match the text height */
+        position: relative;
+    }
+
+    .introduction_image {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
