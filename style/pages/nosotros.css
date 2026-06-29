@@ -2,12 +2,10 @@
 @import "../components/navbar.css";
 @import "../components/footer.css";
 
-/* Base is mobile screens */
-.introduction {
-    margin: 2rem;
-    
+/* --- Common for mobile and desktop --- */
+
+.introduction {    
     display: flex;
-    flex-direction: column;
     gap: 2rem;
 }
 
@@ -29,49 +27,45 @@
     margin-top: 1rem;
 }
 
-.introduction_text_conclusion_brand {
+.introduction_text_conclusion_brand_remark {
     color: var(--remark-color);
     font-weight: bold;
 }
 
-.introduction_image {
+.introduction_image_container_image {
     max-width: 100%;
     height: auto;
 }
 
-/* Applies to desktop screens */
+/* --- Applies to mobile screens (base scenario) --- */
+
+.introduction {
+    flex-direction: column;
+    margin: 2rem;
+}
+
+/* --- Applies to desktop screens --- */
+
 @media (min-width: 768px) {
     .introduction {
         max-width: 60%;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 2rem auto;
 
-        flex-direction: row;
+        flex-direction: row;        
+        align-items: center;
     }
 
     .introduction_text {
-        flex: 1;
+        flex: 2;
     }
 
     .introduction_image_container {
         flex: 1;
-
-        /* By fixing it we want to match the text height */
-        position: relative;
-    }
-
-    .introduction_image {
-        height: 100%;
-        width: auto;
-
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
     }
 }
 
-/* Applies to big desktop screens */
+/* --- Applies to big desktop screens --- */
+
 @media (min-width: 2560px) {
     .introduction {
         max-width: 40%;
