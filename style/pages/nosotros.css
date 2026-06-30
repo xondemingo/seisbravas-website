@@ -83,7 +83,7 @@ main {
 .follow-us_button_text {
     color: var(--main-color);
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: var(--semibold);
 }
 
 /* --- Applies to mobile screens (base scenario) --- */

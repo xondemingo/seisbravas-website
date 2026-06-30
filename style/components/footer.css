@@ -1,9 +1,10 @@
 @import "../base/color.css";
+@import "../base/font.css";
 
 footer {
     font-size: 1.25rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: var(--semibold);
     color: white;
     background-color: var(--main-color);
     height: 2rem;
