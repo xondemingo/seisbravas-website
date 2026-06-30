@@ -6,7 +6,6 @@
 
 .introduction {    
     display: flex;
-    gap: 2rem;
 }
 
 .introduction_text {
@@ -34,24 +33,35 @@
 
 .introduction_image_container_image {
     max-width: 100%;
+    border-radius: 20%;
 }
 
 /* --- Applies to mobile screens (base scenario) --- */
 
-.introduction {
-    flex-direction: column;
+main {
     margin: 2rem;
+}
+
+.introduction {
+    
+    flex-direction: column;
+    gap: 2rem;
 }
 
 /* --- Applies to desktop screens --- */
 
 @media (min-width: 768px) {
+    main {
+        margin-top: 2rem 0;
+    }
+
     .introduction {
         max-width: 60%;
-        margin: 2rem auto;
+        margin: 0 auto;
 
         flex-direction: row;        
         align-items: center;
+        gap: 4rem;
     }
 
     .introduction_text {
