@@ -35,10 +35,26 @@
                 <img class="introduction_image_container_image" src="images/about-us.webp" alt="os y ly camuflados como don quijote y sancho panza" />
             </div>
         </div>
+
+        <div class="follow-us">
+            <div class="follow-us_text">¿Curiosidad por lo que estamos haciendo?</div>
+            <button class="follow-us_button" id="follow-us_button">
+                <img class="follow-us_button_image" src="images/instagram-icon-pink.svg" alt="icono de instagram" loading="lazy" />
+                <span class="follow-us_button_text">¡Síguenos en Instagram!</span>
+            </button>
+        </div>
     </main>
 
     <footer>
         Gracias por pasarte
     </footer>
+
+    <script>
+        const followUsButton = document.getElementById("follow-us_button");
+
+        followUsButton.addEventListener("click", () => {
+            window.open("https://www.instagram.com/6bravas", "_blank");
+        });
+    </script>
 </body>
 </html>

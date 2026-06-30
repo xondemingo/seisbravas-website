@@ -2,7 +2,20 @@
 @import "../components/navbar.css";
 @import "../components/footer.css";
 
+:root {
+    --gap-between-elements: 3rem;
+}
+
 /* --- Common for mobile and desktop --- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-between-elements);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
 
 .introduction {    
     display: flex;
@@ -36,23 +49,61 @@
     border-radius: 20%;
 }
 
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.follow-us_text {
+    text-align: center;
+    font-family: var(--secondary-font-family);
+    font-size: 2rem;
+}
+
+.follow-us_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+
+    background-color: white;
+    cursor: pointer;
+}
+
+.follow-us_button_image {
+    height: 2.5rem;
+}
+
+.follow-us_button_text {
+    color: var(--main-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 /* --- Applies to mobile screens (base scenario) --- */
 
 main {
-    margin: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .introduction {
-    
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--gap-between-elements);
 }
 
 /* --- Applies to desktop screens --- */
 
 @media (min-width: 768px) {
     main {
-        margin-top: 2rem 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .introduction {
