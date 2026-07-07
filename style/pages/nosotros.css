@@ -31,7 +31,7 @@ main {
 }
 
 .introduction_text_greeting {
-    font-family: var(--secondary-font-family);
+    font-family: var(--secondary-font-family), var(--fallback-font-family);
     font-size: 3rem;
 }
 
@@ -49,6 +49,33 @@ main {
     border-radius: 20%;
 }
 
+.unsolicited-fact {
+    background-color: var(--banner-color);
+    width: 100%;
+    padding: 1.5rem 1.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unsolicited-fact_content {
+    font-family: var(--secondary-font-family), var(--fallback-font-family);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.unsolicited-fact_content_title {
+    font-size: 1.75rem;
+    color: white;
+}
+
+.unsolicited-fact_content_fact {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
 .follow-us {
     display: flex;
     flex-direction: column;
@@ -58,7 +85,7 @@ main {
 
 .follow-us_text {
     text-align: center;
-    font-family: var(--secondary-font-family);
+    font-family: var(--secondary-font-family), var(--fallback-font-family);
     font-size: 2rem;
 }
 
