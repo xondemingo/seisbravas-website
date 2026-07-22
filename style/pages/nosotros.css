@@ -76,6 +76,20 @@ main {
     margin-left: 1rem;
 }
 
+.our-deal {
+    display: flex;
+    gap: 4rem;
+}
+
+.our-deal_deal-container {
+    flex: 1;
+
+    text-align: center;
+    background-color: var(--custom-white);
+    padding: 1rem 2rem;
+    border-radius: 20%;
+}
+
 .follow-us {
     display: flex;
     flex-direction: column;
@@ -125,6 +139,10 @@ main > :not(.unsolicited-fact) {
     gap: var(--gap-between-elements);
 }
 
+.our-deal {
+    flex-direction: column;
+}
+
 /* --- Applies to desktop screens --- */
 
 @media (min-width: 768px) {
@@ -133,7 +151,7 @@ main > :not(.unsolicited-fact) {
         margin-left: 0;
     }
 
-    .introduction, .unsolicited-fact_content {
+    .introduction, .unsolicited-fact_content, .our-deal {
         max-width: 60%;
     }
 
@@ -151,6 +169,10 @@ main > :not(.unsolicited-fact) {
 
     .introduction_image_container {
         flex: 1;
+    }
+
+    .our-deal {
+        flex-direction: row;
     }
 }
 
