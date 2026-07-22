@@ -78,7 +78,6 @@ main {
 
 .our-deal {
     display: flex;
-    gap: 4rem;
 }
 
 .our-deal_deal-container {
@@ -164,6 +163,7 @@ main > :not(.unsolicited-fact) {
 
 .our-deal {
     flex-direction: column;
+    gap: 2rem;
 }
 
 /* --- Applies to desktop screens --- */
@@ -196,6 +196,7 @@ main > :not(.unsolicited-fact) {
 
     .our-deal {
         flex-direction: row;
+        gap: 4rem;
     }
 
     .our-deal_deal-container_text {
