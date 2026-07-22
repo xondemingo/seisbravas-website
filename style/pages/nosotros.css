@@ -40,7 +40,7 @@ main {
 }
 
 .introduction_text_conclusion_brand_remark {
-    color: var(--remark-color);
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -50,7 +50,7 @@ main {
 }
 
 .unsolicited-fact {
-    background-color: var(--banner-color);
+    background-color: var(--secondary-color);
     width: 100%;
 
     display: flex;
