@@ -95,6 +95,14 @@ main {
     border-radius: 10%;
 }
 
+.our-deal_deal-container_emoji {
+    font-size: 1.75rem;
+    background-color: var(--background-color);
+    border-radius: 100%;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
 .our-deal_deal-container_title {
     color: var(--main-color);
     font-size: 1.2rem;
