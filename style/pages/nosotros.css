@@ -207,7 +207,7 @@ main > :not(.unsolicited-fact) {
 /* --- Applies to big desktop screens --- */
 
 @media (min-width: 2560px) {
-    .introduction, .unsolicited-fact_content {
+    .introduction, .unsolicited-fact_content, .our-deal {
         max-width: 40%;
     }
 }
