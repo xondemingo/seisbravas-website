@@ -84,10 +84,25 @@ main {
 .our-deal_deal-container {
     flex: 1;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     text-align: center;
+
     background-color: var(--custom-white);
-    padding: 1rem 2rem;
-    border-radius: 20%;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+.our-deal_deal-container_title {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: var(--semibold);
+}
+
+.our-deal_deal-container_text {
+    font-size: 1.1rem;
 }
 
 .follow-us {
@@ -173,6 +188,10 @@ main > :not(.unsolicited-fact) {
 
     .our-deal {
         flex-direction: row;
+    }
+
+    .our-deal_deal-container_text {
+        max-width: 60%;
     }
 }
 
