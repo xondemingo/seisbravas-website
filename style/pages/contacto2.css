@@ -1,0 +1,38 @@
+/* --- Common for mobile and desktop --- */
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+/* --- Applies to mobile screens (base scenario) --- */
+
+.contact {
+    flex-direction: column;
+}
+
+/* --- Applies to desktop screens --- */
+
+@media (min-width: 768px) {
+    .contact {
+        flex-direction: row;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .lets-talk {
+        flex: 2;
+    }
+
+    .also-here {
+        flex: 1;
+    }
+}
+
+/* --- Applies to big desktop screens --- */
+
+@media (min-width: 2560px) {
+    .contact {
+        max-width: 40%;
+    }
+}
