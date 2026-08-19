@@ -7,9 +7,30 @@
     align-items: center;
 }
 
+.lets-talk_prompt {
+    text-align: center;
+}
+
+.lets-talk_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.lets-talk_form_input-pair {
+    display: flex;
+}
+
+.lets-talk_form_submit-button {
+    align-self: center;
+}
+
 /* --- Applies to mobile screens (base scenario) --- */
 
 .contact {
+    flex-direction: column;
+}
+
+.lets-talk_form_input-pair {
     flex-direction: column;
 }
 
@@ -24,6 +45,10 @@
 
     .lets-talk {
         flex: 2;
+    }
+
+    .lets-talk_form_input-pair {
+        flex-direction: row;
     }
 
     .also-here {
