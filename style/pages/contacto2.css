@@ -49,6 +49,11 @@
 
 /* --- Applies to mobile screens (base scenario) --- */
 
+main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .contact {
     flex-direction: column;
     gap: var(--gap-between-elements);
@@ -61,6 +66,10 @@
 /* --- Applies to desktop screens --- */
 
 @media (min-width: 768px) {
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .contact {
         flex-direction: row;
         gap: 4rem;
