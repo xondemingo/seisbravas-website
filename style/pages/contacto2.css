@@ -43,6 +43,10 @@
     display: flex;
 }
 
+.lets-talk_form_message-textarea {
+    resize: none;
+}
+
 .lets-talk_form_submit-button {
     align-self: center;
 }
@@ -70,6 +74,7 @@ main {
         margin-left: 0;
         margin-right: 0;
     }
+
     .contact {
         flex-direction: row;
         gap: 4rem;
