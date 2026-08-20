@@ -1,6 +1,10 @@
 @import "../base/color.css";
 @import "../base/font.css";
 
+:root {
+    --gap-between-elements: 3rem;
+}
+
 html {
     background-color: var(--background-color);
     font-family: var(--base-font-family), var(--fallback-font-family);
@@ -18,7 +22,7 @@ body {
 
 main {
     flex: 1;
-    
+
     margin-top: 2rem;
     margin-bottom: 4rem;
 }

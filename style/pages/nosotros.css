@@ -2,10 +2,6 @@
 @import "../components/navbar.css";
 @import "../components/footer.css";
 
-:root {
-    --gap-between-elements: 3rem;
-}
-
 /* --- Common for mobile and desktop --- */
 
 main {
