@@ -37,13 +37,23 @@
 .lets-talk_form {
     display: flex;
     flex-direction: column;
+
+    background-color: var(--custom-white);
+    padding: 1.5rem;
 }
 
 .lets-talk_form_fields {
     display: grid;
+    gap: 1rem;
 }
 
-.lets-talk_form_message-textarea {
+.lets-talk_form_fields > input,
+.lets-talk_form_fields > textarea {
+    background-color: var(--background-color);
+    border: none;
+}
+
+.lets-talk_form_fields_message-textarea {
     resize: none;
 }
 
@@ -53,14 +63,13 @@
 
 /* --- Applies to mobile screens (base scenario) --- */
 
-main {
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 .contact {
     flex-direction: column;
     gap: var(--gap-between-elements);
+}
+
+.lets-talk_prompt {
+    margin: 0 2rem;
 }
 
 .lets-talk_form_fields {
@@ -95,11 +104,6 @@ main {
 /* --- Applies to desktop screens --- */
 
 @media (min-width: 768px) {
-    main {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .contact {
         flex-direction: row;
         gap: 4rem;
@@ -109,6 +113,10 @@ main {
 
     .lets-talk {
         flex: 2;
+    }
+
+    .lets-talk_form {
+        border-radius: 30px;
     }
 
     .lets-talk_form_fields {
