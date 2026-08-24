@@ -53,6 +53,12 @@
     border: none;
 }
 
+.lets-talk_form_fields_agree-whatsapp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
 .lets-talk_form_fields_message-textarea {
     resize: none;
 }
