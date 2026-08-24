@@ -36,21 +36,16 @@
                 </div>
 
                 <form id="lets-talk_form" class="lets-talk_form">
-                    <div class="lets-talk_form_input-pair">
-                        <input type="text" placeholder="Tu nombre..." name="name" aria-label="Nombre" required />
-                        <input type="email" placeholder="Tu email..." name="email" aria-label="Correo" required />
-                    </div>
-
-                    <div class="lets-talk_form_input-pair">
-                        <input type="tel" placeholder="Tu teléfono..." name="phone" aria-label="Teléfono" required />
-                        <div>
+                    <div class="lets-talk_form_fields">
+                        <input class="lets-talk_form_fields_name-input" type="text" placeholder="Tu nombre..." name="name" aria-label="Nombre" required />
+                        <input class="lets-talk_form_fields_email-input" type="email" placeholder="Tu email..." name="email" aria-label="Correo" required />
+                        <input class="lets-talk_form_fields_phone-input" type="tel" placeholder="Tu teléfono..." name="phone" aria-label="Teléfono" required />
+                        <div class="class="lets-talk_form_fields_agree-whatsapp-container">
                             <input type="checkbox" id="agree-whatsapp-communications-checkbox" name="agreesToWhatsApp" />
                             <label for="agree-whatsapp-communications-checkbox">Acepto recibir comunicaciones por WhatsApp</label>
                         </div>
+                        <textarea class="lets-talk_form_fields_message-textarea" placeholder="Cuéntanos..." rows="4" name="message" aria-label="Mensaje" required></textarea>
                     </div>
-
-                    <textarea class="lets-talk_form_message-textarea" placeholder="Cuéntanos..." rows="4" name="message" aria-label="Mensaje" required></textarea>
-
                     <button type="submit" class="lets-talk_form_submit-button">Enviar mensaje</button>
                 </form>
             </div>
